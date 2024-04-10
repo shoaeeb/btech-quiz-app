@@ -1,0 +1,25 @@
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 400px;
+  max-height: 600px;
+}
+
+.register__form h1 {
+  text-align: center;
+  color: var(--heading-color);
+}
+
+.register__form input {
+  padding: 10px 15px;
+}
+
+.register__form button {
+  background-color: var(--heading-color);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: flex;
+  align-self: center;
+}

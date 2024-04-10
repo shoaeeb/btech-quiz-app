@@ -1,0 +1,107 @@
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timer {
+  font-size: 1.2em;
+}
+.main_content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+}
+.quiz_container {
+  flex-grow: 1;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar {
+  width: 20%;
+  margin-left: 20px;
+}
+.profile {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.profile img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.status_panel {
+  background-color: #ddd;
+  padding: 10px;
+  margin-top: 20px;
+}
+.status_panel h3 {
+  margin-top: 0;
+}
+.question {
+  margin-bottom: 20px;
+}
+.options {
+  list-style: none;
+  padding: 0;
+}
+.options li {
+  margin-bottom: 10px;
+}
+.button_container {
+  text-align: center;
+}
+.button_container button {
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.rounded_options {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin: 5px;
+}
+.actions {
+  margin-top: 150px;
+}
+.actions button {
+  padding: 7px 20px;
+  margin: 0 10px;
+}
+.container {
+  font-size: small;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container > div > div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin: 5px;
+}
+.answered {
+  background-color: green;
+}
+.not_answered {
+  background-color: red;
+}
+.not_visited {
+  background-color: #333;
+}
+.mark_for_review {
+  background-color: darkslateblue;
+}

@@ -1,0 +1,24 @@
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 300px;
+}
+
+.login__form h1 {
+  text-align: center;
+  color: var(--heading-color);
+}
+
+.login__form input {
+  padding: 10px 15px;
+}
+
+.login__form button {
+  background-color: var(--heading-color);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: flex;
+  align-self: center;
+}

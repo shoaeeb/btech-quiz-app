@@ -1,0 +1,58 @@
+.subject_choose {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 300px;
+}
+
+.subject_choose h1 {
+  text-align: center;
+  color: var(--heading-color);
+}
+
+.subject_choose input {
+  padding: 10px 15px;
+}
+
+.subject_choose button {
+  background-color: var(--heading-color);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: flex;
+  align-self: center;
+}
+
+.category__section {
+  padding: 16px;
+}
+
+.category__section > * {
+  margin-bottom: 6px;
+}
+
+.category__section h1,
+p {
+  color: var(--heading-color);
+  text-align: center;
+}
+
+.category__section .categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.categories div,
+.options div {
+  width: 250px;
+  border: 1px solid var(--hover-color);
+  background-color: var(--category);
+  color: #fff;
+  padding: 8px;
+  cursor: pointer;
+}
+.categories div:hover,
+.options div:hover {
+  background-color: var(--hover-color);
+}

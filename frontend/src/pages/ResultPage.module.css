@@ -1,0 +1,44 @@
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.result_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 500px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid black;
+  gap: 5px;
+}
+.result_card h2 {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.result_card p {
+  margin: 5px 0;
+}
+.result_card span {
+  font-weight: bold;
+}
+.result_card button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.reset {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+.logout__button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
