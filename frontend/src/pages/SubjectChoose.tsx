@@ -45,7 +45,7 @@ const SubjectChoose = () => {
       </div>
 
       {subject && (
-        <div className=" flex justify-center">
+        <div className=" flex justify-center mb-2">
           <div
             onClick={() => {
               navigate("/quiz-page");
@@ -58,10 +58,10 @@ const SubjectChoose = () => {
       )}
 
       {subject && (
-        <div className=" flex justify-center">
+        <div className=" flex justify-center mt-5">
           <div
             onClick={() => {
-              navigate("/create-quiz");
+              navigate("/analysis");
             }}
             className="w-fit  bg-blue-500 px-2 py-2 text-white "
           >

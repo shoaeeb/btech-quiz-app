@@ -11,6 +11,7 @@ import { useAppContext } from "./Context/AppContext";
 import FeildChoose from "./pages/FieldChoose";
 import CreateQuiz from "./pages/CreateQuiz";
 import ReviewQuestions from "./pages/ReviewQuestions";
+import BarGraph from "./components/BarGraph";
 
 function App() {
   const { isLoggedIn } = useAppContext();
@@ -108,6 +109,7 @@ function App() {
       )}
 
       {isLoggedIn && <Route path="/field-choose" element={<FeildChoose />} />}
+      {isLoggedIn && <Route path="/analysis" element={<BarGraph />} />}
     </Routes>
   );
 }

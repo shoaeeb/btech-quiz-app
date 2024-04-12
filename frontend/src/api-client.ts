@@ -202,3 +202,29 @@ export const createQuiz = async (formData: SetQuestion) => {
   }
   return responseBody;
 };
+
+export type ResultTypeWithData = {
+  totalQuestions: number;
+  totalTimeTakenByAllStudents: number;
+  unattemptedQuestions: number;
+  correctlyAnswered: number;
+  totalCandidates: number;
+};
+
+export const getResult = async (
+  departmentId: string,
+  subjectId: string
+): Promise<ResultTypeWithData> => {
+  const response = await fetch(
+    `${API_BASE_URL}/results/getResults/${departmentId}/${subjectId}`,
+    {
+      credentials: "include",
+      method: "GET",
+    }
+  );
+  const responseBody = await response.json();
+  if (!response.ok) {
+    throw new Error(responseBody.errors);
+  }
+  return responseBody;
+};

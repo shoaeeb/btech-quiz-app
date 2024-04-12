@@ -1,6 +1,19 @@
-import mongoose from "mongoose";
+import mongoose, { mongo } from "mongoose";
 
-const ResultSchema = new mongoose.Schema({
+type ResultType = {
+  attemptedBy: mongoose.Types.ObjectId;
+  departmentId: mongoose.Types.ObjectId;
+  subjectId: mongoose.Types.ObjectId;
+  result: {
+    correctlyAnswered: boolean;
+    question: mongoose.Types.ObjectId;
+    selectedAnswer: string;
+  }[];
+  timeTaken: number;
+  unattempted: number;
+};
+
+const ResultSchema = new mongoose.Schema<ResultType>({
   attemptedBy: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
