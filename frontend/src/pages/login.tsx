@@ -51,7 +51,7 @@ const Login = () => {
           })}
         />
         {errors.email && (
-          <span id="error-username-message" className="hidden message">
+          <span id="error-username-message" className=" message">
             {errors.email.message}
           </span>
         )}
@@ -64,7 +64,7 @@ const Login = () => {
           })}
         />
         {errors.password && (
-          <span id="error-password-message" className="hidden message">
+          <span id="error-password-message" className=" message">
             {errors.password.message}
           </span>
         )}

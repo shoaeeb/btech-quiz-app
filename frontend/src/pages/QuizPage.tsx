@@ -64,6 +64,23 @@ const QuizPage = () => {
   useEffect(() => {
     if (questions && questions?.questions.length > 0) setQuestions(questions);
   }, [questions, setQuestions]);
+
+  useEffect(() => {
+    let stream: MediaStream | null = null;
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices
+        .getUserMedia({
+          video: true,
+        })
+        .then((str: MediaStream) => (stream = str));
+    }
+
+    return () => {
+      if (stream) {
+        stream.getTracks().forEach((track) => track.stop());
+      }
+    };
+  }, []);
   if (!department || !subject) {
     return <Navigate to="/field-choose" />;
   }

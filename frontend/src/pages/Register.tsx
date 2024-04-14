@@ -53,7 +53,7 @@ const Register = () => {
           })}
         />
         {errors.email && (
-          <span id="error-email-message" className="hidden message">
+          <span id="error-email-message" className=" message">
             {errors.email.message}
           </span>
         )}
@@ -66,7 +66,7 @@ const Register = () => {
           })}
         />
         {errors.name && (
-          <span id="error-name-message" className="hidden message">
+          <span id="error-name-message" className=" message">
             {errors.name.message}
           </span>
         )}
@@ -79,7 +79,7 @@ const Register = () => {
           })}
         />
         {errors.username && (
-          <span id="error-username-message" className="hidden message">
+          <span id="error-username-message" className=" message">
             {errors.username.message}
           </span>
         )}
@@ -92,7 +92,7 @@ const Register = () => {
           })}
         />
         {errors.password && (
-          <span id="error-password-message" className="hidden message">
+          <span id="error-password-message" className=" message">
             {errors.password.message}
           </span>
         )}
@@ -110,7 +110,7 @@ const Register = () => {
           })}
         />
         {errors.confirmPassword && (
-          <span id="error-retype-password-message" className="hidden message">
+          <span id="error-retype-password-message" className=" message">
             {errors.confirmPassword.message}
           </span>
         )}

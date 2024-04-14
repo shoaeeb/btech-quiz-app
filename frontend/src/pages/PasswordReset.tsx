@@ -51,6 +51,7 @@ const PasswordReset = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
+                if (!email) return;
                 mutation.mutate(email);
               }}
               type="submit"
@@ -82,6 +83,7 @@ const PasswordReset = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
+                if (!email || !otp || !password) return;
                 passwordMutation.mutate({ email, otp, password });
               }}
               type="submit"
